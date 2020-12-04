@@ -18,11 +18,12 @@ import org.thymeleaf.templatemode.TemplateMode;
 import org.thymeleaf.templateresolver.ITemplateResolver;
 
 import com.algaworks.brewer.controller.CervejasController;
+import com.algaworks.brewer.controller.ClientesController;
 
 import nz.net.ultraq.thymeleaf.LayoutDialect;
 
 @Configuration
-@ComponentScan(basePackageClasses = { CervejasController.class })
+@ComponentScan(basePackageClasses = { CervejasController.class, ClientesController.class })
 @EnableWebMvc
 public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationContextAware {
 
